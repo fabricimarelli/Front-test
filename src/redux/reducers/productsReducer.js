@@ -5,9 +5,9 @@ import {
   SET_ALL_PRODUCTS,
   SET_ERROR,
   SET_LOADING_TRUE,
-} from '../types/productsTypes';
+} from '../types/productsTypes';//aciones que puede tener el producto
 
-const initialState = {
+const initialState = {//se inicializa un objeto product
   list: [],
   error: '',
   isLoading: false,

@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';//para compartir el estado global
 import thunk from 'redux-thunk';
 import { rootReducer } from './reducers/rootReducer';
 
@@ -8,3 +8,5 @@ export const store = createStore(
   rootReducer,
   composeEnhancer(applyMiddleware(thunk))
 );
+
+//Store componente principal de react donde nuclea los rootreducer

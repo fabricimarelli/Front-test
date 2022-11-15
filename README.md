@@ -14,7 +14,7 @@ This project consists of a simple "API Rest or ABM of Users" to manage users, wi
 1. Clone the project
 
 ```sh
-git clone https://github.com/matiasvirgili/users-frontend
+git clone 
 ```
 
 2. Open folder and create and config your environment variables in a `.env` file, you can use the `.env.example` as a guid
@@ -22,7 +22,7 @@ git clone https://github.com/matiasvirgili/users-frontend
 3. For the app to work, you must download its corresponding backend, which I leave in the following link
 
 ```sh
-git clone https://github.com/matiasvirgili/Users-Rest-Node
+git clone 
 ```
 
 4. Once you have the backend downloaded, you have to lift the server from the terminal with the following command

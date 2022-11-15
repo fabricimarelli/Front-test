@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios';//libreria para pegarle a la api
 import {
   CREATE_PRODUCT,
   UPDATE_PRODUCT,
@@ -66,7 +66,6 @@ export const deleteProductAsync = (productId) => async (dispatch) => {
   dispatch(setLoadingTrue());
   try {
     const res = await axios.delete(
-      // eslint-disable-next-line no-undef
       `${process.env.REACT_APP_BACKEND_URL_PORT}/products/${productId}`
     );
     if (res.status === 200) {
@@ -81,7 +80,6 @@ export const updateProductAsync = (product) => async (dispatch) => {
   dispatch(setLoadingTrue());
   try {
     const res = await axios.put(
-      // eslint-disable-next-line no-undef
       `${process.env.REACT_APP_BACKEND_URL_PORT}/products/${product.id}`,
       product
     );
@@ -98,7 +96,6 @@ export const createProductAsync = (product) => async (dispatch) => {
 
   try {
     const res = await axios.post(
-      // eslint-disable-next-line no-undef
       `${process.env.REACT_APP_BACKEND_URL_PORT}/products`,
       product
     );
